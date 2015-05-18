@@ -7,7 +7,11 @@ var WebSocket = require('ws'),
 var yo = new Yo(process.env.YO),
 	ws = new WebSocket('wss://wss.redditmedia.com/thebutton?h=1efa165a3c60db15546696c4a043aaecfd2b84e7&e=1432057125');
 
-ws.on('open', function () {});
+ws.on('open', function () {
+	yo.yo('dmjgilbert', function (e, f) {});
+});
+
+yo.yo('dmjgilbert', function (e, f) {});
 
 ws.on('message', function (message) {
 	var message = JSON.parse(message);
@@ -20,7 +24,7 @@ ws.on('message', function (message) {
 				yo.yo('dmjgilbert', function (e, f) {});
 			}
 
-			if (secondsLeft < 1) {
+			if (secondsLeft <= 0) {
 				yo.yo_all(function (e, f) {})
 			}
 		}

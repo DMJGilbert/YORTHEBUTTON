@@ -1,0 +1,21 @@
+{
+	"name": "rthebutton",
+	"version": "1.0.0",
+	"description": "Yo the button",
+	"author": "Darren Gilbert <dmjgilbert@me.com>",
+	"contributors": [{
+		"name": "Darren Gilbert",
+		"email": "dmjgilbert@me.com"
+	}],
+	"scripts": {
+		"start": "node app.js"
+	},
+	"main": "app.js",
+	"dependencies": {
+		"ws": "*",
+		"yo-api": "*",
+		"finalhandler": "*",
+		"http": "*",
+		"serve-static": "*"
+	}
+}
